@@ -1,0 +1,17 @@
+/home/manu/Work/projects/advent_of_code_2022/bin/Debug/net7.0/advent_of_code_2022
+/home/manu/Work/projects/advent_of_code_2022/bin/Debug/net7.0/advent_of_code_2022.deps.json
+/home/manu/Work/projects/advent_of_code_2022/bin/Debug/net7.0/advent_of_code_2022.runtimeconfig.json
+/home/manu/Work/projects/advent_of_code_2022/bin/Debug/net7.0/advent_of_code_2022.dll
+/home/manu/Work/projects/advent_of_code_2022/bin/Debug/net7.0/advent_of_code_2022.pdb
+/home/manu/Work/projects/advent_of_code_2022/bin/Debug/net7.0/Advent of Code Framework.dll
+/home/manu/Work/projects/advent_of_code_2022/obj/Debug/net7.0/advent_of_code_2022.csproj.AssemblyReference.cache
+/home/manu/Work/projects/advent_of_code_2022/obj/Debug/net7.0/advent_of_code_2022.GeneratedMSBuildEditorConfig.editorconfig
+/home/manu/Work/projects/advent_of_code_2022/obj/Debug/net7.0/advent_of_code_2022.AssemblyInfoInputs.cache
+/home/manu/Work/projects/advent_of_code_2022/obj/Debug/net7.0/advent_of_code_2022.AssemblyInfo.cs
+/home/manu/Work/projects/advent_of_code_2022/obj/Debug/net7.0/advent_of_code_2022.csproj.CoreCompileInputs.cache
+/home/manu/Work/projects/advent_of_code_2022/obj/Debug/net7.0/advent_of_code_2022.csproj.CopyComplete
+/home/manu/Work/projects/advent_of_code_2022/obj/Debug/net7.0/advent_of_code_2022.dll
+/home/manu/Work/projects/advent_of_code_2022/obj/Debug/net7.0/refint/advent_of_code_2022.dll
+/home/manu/Work/projects/advent_of_code_2022/obj/Debug/net7.0/advent_of_code_2022.pdb
+/home/manu/Work/projects/advent_of_code_2022/obj/Debug/net7.0/advent_of_code_2022.genruntimeconfig.cache
+/home/manu/Work/projects/advent_of_code_2022/obj/Debug/net7.0/ref/advent_of_code_2022.dll

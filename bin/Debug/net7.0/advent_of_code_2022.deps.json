@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "advent_of_code_2022/1.0.0": {
+        "dependencies": {
+          "AdventOfCode.Framework": "1.2.1"
+        },
+        "runtime": {
+          "advent_of_code_2022.dll": {}
+        }
+      },
+      "AdventOfCode.Framework/1.2.1": {
+        "runtime": {
+          "lib/net7.0/Advent of Code Framework.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "advent_of_code_2022/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AdventOfCode.Framework/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N7Raius9RLZ1w2hx7swqsxDzE8DJBGs+5PseHpF6IV1klET0drhH16E4FdFr7n6FpyaGRxUhYKbdlJXTtJzWmQ==",
+      "path": "adventofcode.framework/1.2.1",
+      "hashPath": "adventofcode.framework.1.2.1.nupkg.sha512"
+    }
+  }
+}
