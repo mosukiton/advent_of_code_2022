@@ -1,20 +1,20 @@
 using AdventOfCode.Framework;
 
-//[Solution(1)]
-//[SolutionInput("Input1.txt")]
-//public class Solution1 : Solution
+//[Solution(x)]
+//[SolutionInput("Inputx.txt")]
+//public class Solutionx : Solution
 //{
-    //public Solution1(Input input) : base(input)
+    //public Solutionx(Input input) : base(input)
     //{
     //}
 
     //protected override string? Problem1()
     //{
-        //return "";
+        //return null;
     //}
     
     //protected override string? Problem2()
     //{
-        //return "";
+        //return null;
     //}
 //}
