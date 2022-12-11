@@ -1,10 +1,11 @@
 using AdventOfCode.Framework;
 
-//[Solution(x)]
-//[SolutionInput("Inputx.txt")]
-//public class Solutionx : Solution
+//[Solution(X)]
+//[SolutionInput("InputX_test.txt")]
+//[SolutionInput("InputX.txt")]
+//public class SolutionX : Solution
 //{
-    //public Solutionx(Input input) : base(input)
+    //public SolutionX(Input input) : base(input)
     //{
     //}
 
