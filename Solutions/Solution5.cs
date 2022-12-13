@@ -12,11 +12,12 @@ using AdventOfCode.Framework;
 public class Solution5 : Solution
 {
     SupplyStacks supplyStacks;
+    List<string> Lines;
     public Solution5(Input input) : base(input)
     {
         int lineIndexOfStackBase = 0;
         char[] stackIdLine = {};
-        List<string> Lines = new(input.Lines);
+        Lines = new(input.Lines);
         // find number of stacks
         foreach (string line in Lines)
         {
@@ -70,12 +71,36 @@ public class Solution5 : Solution
 
     protected override string? Problem1()
     {
-        return null;
+        foreach (var line in Lines)
+        {
+            if (line.Contains("move"))
+            {
+                supplyStacks.ParseInstructionAndExecuteProb1(line);
+            }
+        }
+        string topCrates = "";
+        foreach (var stack in supplyStacks.Stacks)
+        {
+            topCrates += stack.Pop().ToString();
+        }
+        return topCrates;
     }
     
     protected override string? Problem2()
     {
-        return null;
+        foreach (var line in Lines)
+        {
+            if (line.Contains("move"))
+            {
+                supplyStacks.ParseInstructionAndExecuteProb2(line);
+            }
+        }
+        string topCrates = "";
+        foreach (var stack in supplyStacks.Stacks)
+        {
+            topCrates += stack.Pop().ToString();
+        }
+        return topCrates;
     }
 }
 
@@ -89,6 +114,47 @@ public class SupplyStacks
         for (int i = 1; i <= numberOfStacks; i++)
         {
             Stacks.Add(new Stack<char>());
+        }
+    }
+
+    public void ParseInstructionAndExecuteProb1(string instruction)
+    {
+        string[] instructionSplit = instruction.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        int numberOfCrates = int.Parse(instructionSplit[1]);
+        int sourceStackIndex = int.Parse(instructionSplit[3]) - 1;
+        int destStackIndex = int.Parse(instructionSplit[5]) - 1;
+        ExecuteInstructionProb1(numberOfCrates, sourceStackIndex, destStackIndex);
+    }
+
+    private void ExecuteInstructionProb1(int numberOfCrates, int sourceIndex, int destIndex)
+    {
+        for (int i = 1; i <= numberOfCrates; i++)
+        {
+            var crate = Stacks[sourceIndex].Pop();
+            Stacks[destIndex].Push(crate);
+        }
+    }
+    public void ParseInstructionAndExecuteProb2(string instruction)
+    {
+        string[] instructionSplit = instruction.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        int numberOfCrates = int.Parse(instructionSplit[1]);
+        int sourceStackIndex = int.Parse(instructionSplit[3]) - 1;
+        int destStackIndex = int.Parse(instructionSplit[5]) - 1;
+        ExecuteInstructionProb2(numberOfCrates, sourceStackIndex, destStackIndex);
+    }
+
+    private void ExecuteInstructionProb2(int numberOfCrates, int sourceIndex, int destIndex)
+    {
+        Stack<char> interimStack = new();
+        for (int i = 1; i <= numberOfCrates; i++)
+        {
+            var crate = Stacks[sourceIndex].Pop();
+            interimStack.Push(crate);
+        }
+        while(interimStack.Count > 0)
+        {
+            var crate = interimStack.Pop();
+            Stacks[destIndex].Push(crate);
         }
     }
 }
