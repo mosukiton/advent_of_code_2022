@@ -11,7 +11,7 @@ using AdventOfCode.Framework;
 #endif
 public class Solution5 : Solution
 {
-    SupplyStacks supplyStacks;
+    SupplyStacks? supplyStacks;
     List<string> Lines;
     public Solution5(Input input) : base(input)
     {
@@ -57,7 +57,7 @@ public class Solution5 : Solution
         //test
         //foreach (Stack<char> stack in supplyStacks!.Stacks)
         //{
-            //Console.WriteLine(supplyStacks.Stacks.IndexOf(stack) + 1);
+            //Console.WriteLine(supplyStacks!.Stacks.IndexOf(stack) + 1);
             ////foreach (char x in stack)
             ////{
                 ////Console.WriteLine(x);
@@ -75,11 +75,11 @@ public class Solution5 : Solution
         {
             if (line.Contains("move"))
             {
-                supplyStacks.ParseInstructionAndExecuteProb1(line);
+                supplyStacks!.ParseInstructionAndExecuteProb1(line);
             }
         }
         string topCrates = "";
-        foreach (var stack in supplyStacks.Stacks)
+        foreach (var stack in supplyStacks!.Stacks)
         {
             topCrates += stack.Pop().ToString();
         }
@@ -92,11 +92,11 @@ public class Solution5 : Solution
         {
             if (line.Contains("move"))
             {
-                supplyStacks.ParseInstructionAndExecuteProb2(line);
+                supplyStacks!.ParseInstructionAndExecuteProb2(line);
             }
         }
         string topCrates = "";
-        foreach (var stack in supplyStacks.Stacks)
+        foreach (var stack in supplyStacks!.Stacks)
         {
             topCrates += stack.Pop().ToString();
         }
